@@ -16,17 +16,55 @@ void printMenu(int& choice) {
 }
 
 void getChoices(float& A, float& B) {
-    cout << "Please enter the first value:";
+    // Asks user for input.
+    cout << "Please enter the first value: ";
     cin >> A;
-    // The rest of this function is an exercise to the reader
+    cout << "Please enter the second value: ";
+    cin >> B;
 }
 
 void firstChoice(float A, float B) {
-    cout << "This is proving the first choice ran" << endl;
+    float C;
+    C = A + B;
+    cout << "\n";
+    cout << A;
+    cout << " + ";
+    cout << B;
+    cout << " = ";
+    cout << C;
 }
 
 void secondChoice(float A, float B) {
-    cout << "This is proving the second choice ran" << endl;
+    float C;
+    C = A - B;
+    cout << "\n";
+    cout << A;
+    cout << " - ";
+    cout << B;
+    cout << " = ";
+    cout << C;
+}
+
+void thirdChoice(float A, float B) {
+    float C;
+    C = A * B;
+    cout << "\n";
+    cout << A;
+    cout << " * ";
+    cout << B;
+    cout << " = ";
+    cout << C;
+}
+
+void fourthChoice(float A, float B) {
+    float C;
+    C = A / B;
+    cout << "\n";
+    cout << A;
+    cout << " / ";
+    cout << B;
+    cout << " = ";
+    cout << C;
 }
 
 int main() {
@@ -40,6 +78,12 @@ int main() {
     }
     if (choice == 2) {
         secondChoice(A, B);
+    }
+    if (choice == 3) {
+        thirdChoice(A, B);
+    }
+    if (choice == 4) {
+        fourthChoice(A, B);
     }
     return 0;
 }
