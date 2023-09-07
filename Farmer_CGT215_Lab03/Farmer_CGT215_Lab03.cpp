@@ -3,8 +3,33 @@
 
 #include <iostream>
 
-int main()
-{
+using namespace std;
+
+void printMenu(int& choice) {
+    cout << "Welcome to my program, please select an operation to perform:" << endl;
+    cout << "1. Addition" << endl;
+    cout << "2. Subtraction" << endl;
+    cout << "3. Multiplication" << endl;
+    cout << "4. Division" << endl;
+    cout << "\nYour Selection: ";
+    cin >> choice;
+}
+
+void getChoices(float& A, float& B) {
+    cout << "Please enter the first value:";
+    cin >> A;
+    // The rest of this function is an exercise to the reader
+}
+
+void firstChoice(float A, float B) {
+    cout << "This is proving the first choice ran" << endl;
+}
+
+void secondChoice(float A, float B) {
+    cout << "This is proving the second choice ran" << endl;
+}
+
+int main() {
     int choice;
     float A;
     float B;
