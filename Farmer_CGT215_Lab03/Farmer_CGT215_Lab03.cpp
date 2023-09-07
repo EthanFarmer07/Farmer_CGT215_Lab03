@@ -6,6 +6,7 @@
 using namespace std;
 
 void printMenu(int& choice) {
+    // Presents options.
     cout << "Welcome to my program, please select an operation to perform:" << endl;
     cout << "1. Addition" << endl;
     cout << "2. Subtraction" << endl;
@@ -85,5 +86,8 @@ int main() {
     if (choice == 4) {
         fourthChoice(A, B);
     }
+    // Adds space within the consol for readability.
+    cout << "\n";
+    cout << "\n";
     return 0;
 }
